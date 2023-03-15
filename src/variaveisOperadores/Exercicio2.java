@@ -22,7 +22,15 @@ public class Exercicio2 {
 		
 		media = (nota1+nota2+nota3+nota4)/4;
 		
-		System.out.println("\nA media final das notas será: "+media);
+		System.out.printf("\nA media final das notas será: %.2f",media);
+		
+		if(media>=7 && media<=10) {
+			System.out.println("\nAlune Aprovade!");
+		}else if(media>=5 && media<7){
+			System.out.println("\nAlune de exame!");
+		}else {
+			System.out.println("\nAlune reprovade!");
+		}
 		
 	}
 
