@@ -15,18 +15,20 @@ public class LacoCondicional_Exercicio3 {
 		nomeDoador = leia.nextLine();
 		System.out.println("Digite a idade do doador: ");
 		idadeDoador = leia.nextInt();
-		System.out.println("Primeira doação de sangue? ");
-		jaDoou = leia.nextBoolean();
+	
 		
-		
-		if (idadeDoador >= 18 && idadeDoador <=60) {
-			System.out.println(nomeDoador+" está apto(a) para doar sangue");
-		}else if(idadeDoador > 60 && idadeDoador <=69 && jaDoou == true) {
-			System.out.println(nomeDoador+" está apto(a) para doar sangue");
-		}else if(idadeDoador > 60 && idadeDoador <=69 && jaDoou == false){
-			System.out.println(nomeDoador+" não está apto(a) para doar sangue");
+		if(idadeDoador >=18 && idadeDoador <=69) {
+			if(idadeDoador > 60) {
+				System.out.println("Primeira doação de sangue? ");
+				jaDoou = leia.nextBoolean();
+				if(jaDoou = false) {
+					System.out.println(nomeDoador+" está apto(a) para doar sangue.");
+				}else{
+					System.out.println(nomeDoador+" não está apto(a) para doar sangue.");
+				}
+			}
 		}else {
-			System.out.println(nomeDoador+" não está apto(a) para doar sangue");
+			System.out.println(nomeDoador+" não está apto(a) para doar sangue.");
 		}
 		
 
