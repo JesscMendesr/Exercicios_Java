@@ -20,17 +20,9 @@ public class ArrayVetor_Exercicio1 {
 
 		
 		for(x=0;x<10;x++) {
-			numero[x] = num;
 			System.out.println("\nDigite o "+(x+1)+" numero:");
-			novoNumero = leia.nextInt();
-			if (numero[x] != novoNumero) {
-				numero[x] = novoNumero;
-				
-			}else {
-				System.out.println("Este número já está no vetor ");
-				return;
-				
-			}
+			numero[x] = leia.nextInt();
+	
 		}
 		
 		System.out.println("\nDigite o número que você deseja encontrar: ");
