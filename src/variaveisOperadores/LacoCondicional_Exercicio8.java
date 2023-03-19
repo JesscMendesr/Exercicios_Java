@@ -11,7 +11,7 @@ public class LacoCondicional_Exercicio8 {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		System.out.println("Digite o número correspondente a opção para realizar uma ação\n\n(1)\tSaldo\n(2)\tSaque\n(3)\tDepósito");
+		System.out.println("\nDigite o número correspondente a opção para realizar uma ação:\n\n(1)\tSaldo\n(2)\tSaque\n(3)\tDepósito");
 		op = leia.nextInt();
 		
 		switch(op) {
@@ -37,7 +37,7 @@ public class LacoCondicional_Exercicio8 {
 			System.out.println("Digite o valor do depósito: ");
 			deposito = leia.nextFloat();
 			saldo = saldo + deposito;
-			System.out.println("Depósito realizado com sucesso\nSaldo disponível: "+saldo);
+			System.out.println("Depósito realizado com sucesso!\nSaldo disponível: "+saldo);
 			break;
 		}
 		

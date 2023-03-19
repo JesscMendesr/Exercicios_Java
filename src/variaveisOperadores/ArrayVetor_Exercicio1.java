@@ -5,20 +5,32 @@ import java.util.Scanner;
 public class ArrayVetor_Exercicio1 {
 
 	public static void main(String[] args) {
-		
+	
 		int numero[] = new int[10];
-		int x,controlador=0,localizador,cont = 0;
-		
+		int x = 0,controlador=0,localizador,cont = 0;
+		int num,l,novoNumero;
+			
 		
 		Scanner leia = new Scanner(System.in);
 		
 		System.out.println("\nInsira 10 números inteiros, não ordenados e não repetidos:");
+		
+		System.out.println("\nDigite um numero:");
+		num = leia.nextInt();
 
+		
 		for(x=0;x<10;x++) {
+			numero[x] = num;
 			System.out.println("\nDigite o "+(x+1)+" numero:");
-			numero[x] = leia.nextInt();
-			
-			
+			novoNumero = leia.nextInt();
+			if (numero[x] != novoNumero) {
+				numero[x] = novoNumero;
+				
+			}else {
+				System.out.println("Este número já está no vetor ");
+				return;
+				
+			}
 		}
 		
 		System.out.println("\nDigite o número que você deseja encontrar: ");
