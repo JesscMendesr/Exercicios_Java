@@ -28,9 +28,9 @@ public class Set_Exercicio4 {
 		int num = leia.nextInt();
 		
 		if (numeros.contains(num)) {
-			System.out.println("\nO número "+num+" foi econtrado!!");
+			System.out.printf("O número %d foi encontrado!!",num);
 		}else {
-			System.out.println("\nO número "+num+" não foi encontrado!");
+			System.out.printf("\nO número %d não foi encontrado!",num);
 		}
 		
 		

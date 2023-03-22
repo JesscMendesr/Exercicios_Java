@@ -8,7 +8,7 @@ public class ArrayList_Exercicio2 {
 
 	public static void main(String[] args) {
 		
-		List<Integer> numeros = new ArrayList<Integer>(); 
+		ArrayList<Integer> numeros = new ArrayList<Integer>(); 
 		
 		Scanner leia = new Scanner(System.in);
 		
@@ -28,8 +28,15 @@ public class ArrayList_Exercicio2 {
 		System.out.println("\nDigite um número inteiro: ");
 		int num = leia.nextInt();
 		
+		boolean contem = numeros.contains(num);
 		
-		System.out.println("\nO número "+num+" está na posição: "+numeros.indexOf(num));
+		if (contem == false) {
+			System.out.printf("O numero %d não foi encontrado!!",num);
+		}else {
+			System.out.println("\nO número "+num+" está na posição: "+numeros.indexOf(num));
+		}
+		
+		
 		
 		
 
