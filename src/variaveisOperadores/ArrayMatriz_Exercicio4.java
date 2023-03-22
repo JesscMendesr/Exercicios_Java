@@ -1,5 +1,6 @@
 package variaveisOperadores;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayMatriz_Exercicio4 {
@@ -26,8 +27,10 @@ public class ArrayMatriz_Exercicio4 {
 				medias[l] = soma/4;
 		}
 		
+	    Arrays.sort(medias);
+		
 		for(l=0;l<10;l++) {
-			System.out.println("\nMedia do alune "+(l+1)+": "+medias[l]);
+			System.out.println("\nMedia dos alunes "+(l+1)+": "+medias[l]);
 		}
 			
 		

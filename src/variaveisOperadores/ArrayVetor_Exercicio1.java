@@ -8,7 +8,7 @@ public class ArrayVetor_Exercicio1 {
 	
 		int numero[] = new int[10];
 		int x = 0,controlador=0,localizador,cont = 0;
-		int num,l,novoNumero;
+		int num,l,novoNumero, jaTem;
 			
 		
 		Scanner leia = new Scanner(System.in);
@@ -16,13 +16,14 @@ public class ArrayVetor_Exercicio1 {
 		System.out.println("\nInsira 10 números inteiros, não ordenados e não repetidos:");
 		
 		System.out.println("\nDigite um numero:");
-		num = leia.nextInt();
+		numero[0] = leia.nextInt();
+		jaTem = numero[0];
 
 		
-		for(x=0;x<10;x++) {
+		for(x=1;x<10;x++) {
 			System.out.println("\nDigite o "+(x+1)+" numero:");
 			numero[x] = leia.nextInt();
-	
+		
 		}
 		
 		System.out.println("\nDigite o número que você deseja encontrar: ");

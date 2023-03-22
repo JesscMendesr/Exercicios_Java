@@ -30,7 +30,7 @@ public class ArrayMatriz_Exercicio3 {
 			}
 		for (linha=0; linha<3; linha++) {
 			for (coluna=0; coluna<3; coluna++) {
-				if ((linha == 0 && coluna == 2) || (linha == 1 && coluna == 1) || (linha == 2 && coluna == 0)) {
+				if (coluna + linha == numero.length - 1) {
 					System.out.println("Os numeros da diagonal Secundaria são: "+numero[linha][coluna]);
 					somaSecundaria += numero[linha][coluna];
 				}
