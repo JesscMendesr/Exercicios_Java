@@ -52,7 +52,7 @@ public class Stack_Exercicio1 {
 				break;
 				
 			case 0:
-				System.out.println("Obrigada por utilizar nosso sistema de pilha, volte sempre! \n");
+				System.out.println("\nObrigada por utilizar nosso sistema de pilha, volte sempre! \n");
 				break;
 				
 			default:
