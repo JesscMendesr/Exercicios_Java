@@ -52,12 +52,14 @@ public class Funcionario {
 		NumberFormat nf = NumberFormat.getCurrencyInstance();
 		nf.setMinimumFractionDigits(2);
 		String formatoMoeda = nf.format(salario);
-;		return formatoMoeda;
+		return formatoMoeda;
 	}
 	
 	
 	public void visualizar() {
-		System.out.println("\nNome: "+nome+"\nSexo: "+sexo+"\nIdade: "+idade+"\nFunção: "+funcao+"\nSalário: "+this.formatarMoeda());
+		System.out.println("\n*****************************************************************");
+		System.out.println("Nome: "+nome+"\nSexo: "+sexo+"\nIdade: "+idade+"\nFunção: "
+	+funcao+"\nSalário: "+this.formatarMoeda());
 	}
 	
 }

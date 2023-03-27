@@ -6,17 +6,17 @@ public class Cliente {
 	private String email;
 	private String cidade;
 	private String estado;
-	private int cpf;
 	
 	
 	
-	public Cliente(String nome, String email, String cidade, String estado, int cpf) {
+	
+	public Cliente(String nome, String email, String cidade, String estado) {
 		super();
 		this.nome = nome;
 		this.email = email;
 		this.cidade = cidade;
 		this.estado = estado;
-		this.cpf = cpf;
+	
 		
 	}
 
@@ -61,20 +61,13 @@ public class Cliente {
 	}
 
 
-	public int getCpf() {
-		return cpf;
-	}
-
-
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
-	}
-
+	
 
 	
 	
-	public void imprimir() {
-		System.out.println("\nNome: "+nome+"\nE-mail: "+email+"\nCidade: "+cidade+"\nEstado: "+estado+"\nCPF: "+cpf);
+	public void visualizar() {
+		System.out.println("\n******************************************************************");
+		System.out.println("Nome: "+nome+"\nE-mail: "+email+"\nCidade: "+cidade+"\nEstado: "+estado);
 	}
 	
 	
